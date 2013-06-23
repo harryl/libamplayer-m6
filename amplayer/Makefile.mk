@@ -45,7 +45,7 @@ DIRS += player/system/
 
 CFLAGS+=-I${SRCTREE}/../amffmpeg -I${SRCTREE}/../amcodec/include -I${SRCTREE}/../amadec/include
 CFLAGS+=-fPIC -DENABLE_FREE_SCALE
-CFLAGS+=-mfloat-abi=softfp -mfpu=neon -mtune=cortex-a9 -march=armv7-a
+CFLAGS+=-mfloat-abi=hard -mfpu=neon -mtune=cortex-a9 -march=armv7-a
 target_all=  $(TARGET)
 
 
